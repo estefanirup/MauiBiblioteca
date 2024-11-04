@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBiblioteca.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Título" />
+        <Entry x:Name="TituloEntry" Placeholder="Digite o Titulo" />
+        
+        <Label Text="Autor" />
+        <Entry x:Name="AutorEntry" Placeholder="Digite o Autor" />
+        
+        <Label Text="Gênero" />
+        <Entry x:Name="GeneroEntry" Placeholder="Digite o Gênero" />
+
+        <Label Text="Disponível" />
+        <Switch x:Name="DisponivelSwitch" />
+
+        <Button Text="Adicionar Livro" Clicked="OnAdicionarLivroClicked" />
+        
+        <Label x:Name="ResultadoLabel" Text="" />
+
+    </StackLayout>
+
+</ContentPage>
